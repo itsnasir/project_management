@@ -1,0 +1,6 @@
+staging:
+  adapter: mysql2
+  database: stg_project_management
+  pool: 5
+  username: root
+  password: root  

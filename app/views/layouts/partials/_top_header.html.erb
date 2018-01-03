@@ -1,0 +1,62 @@
+<header class="page-header">
+    <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="havbar-header">
+                <a href="/" class="navbar-brand" id="index">
+                    <%= image_tag "logo_238.png", class: "logo-default", style: "width:100px;" %>
+                </a>
+                <div class="topbar-actions">
+                    <%= form_tag "/", :class=> "search-form", :method => :get do %>    
+                        <%= hidden_field_tag :by_status, params[:by_status] %>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search" name="keyword" value="<%= params[:keyword]%>">
+                          <span class="input-group-btn">
+                            <a href="javascript:;" class="btn md-skip submit">
+                              <i class="fa fa-search"></i>
+                            </a>
+                          </span>
+                        </div>
+                    <% end %>
+                    <div class="btn-group-notification btn-group" id="header_notification_bar">
+                        <button type="button" class="btn md-skip dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="badge">0</span>
+                        </button>
+                        <ul class="dropdown-menu-v2">
+                            <li class="external">
+                                <h3>
+                                    <span class="bold">No pending</span> notifications
+                                </h3>
+                                <a href="#">view all</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="btn-group-img btn-group">
+                        <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <%= image_tag "user_img.png"%>
+                        </button>
+                        <ul class="dropdown-menu-v2" role="menu">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-envelope-open"></i> My Inbox
+                                    <span class="badge badge-danger"> 0 </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-rocket"></i> My Tasks
+                                    <span class="badge badge-success"> 0 </span>
+                                </a>
+                            </li>
+                            <li class="divider"> </li>
+                            <li>
+                                <%= link_to '<i class="icon-key"></i> Log Out'.html_safe, destroy_user_session_path, method: :delete %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!---->

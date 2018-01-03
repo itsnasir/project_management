@@ -1,0 +1,190 @@
+
+  html, body{
+    padding: 0mm !important;
+    font-size: 10px;
+  }
+
+  td.pdf {
+    border-right: 2px solid black !important;
+    border-left: 2px solid black !important;
+  }
+
+  td.grower_field_info {
+    font-size: 14px !important;
+    font-weight: bold;
+    background-color: #EEE;
+  }
+
+  .larger_element{
+    font-size: 13px;
+  }
+
+  .medium-element{
+    font-size: 11px;
+  }
+
+  .green_background{
+    background-color: #88C17D;
+  }
+
+  .borderless td.pdf, .borderless th.pdf {
+    border: none !important;
+  }
+  .row{
+    padding: 0px !important;
+  }
+  .nopadding {
+   padding: 01 !important;
+}
+.container-fluid{
+  padding: 0mm !important;
+}
+.table > td.pdf{
+  padding: 0mm !important;
+}
+.very-high, .toxic{
+  background-color: #00A3FB;
+}
+.high{
+  background-color: #00C256;
+}
+.medium, .adequate{
+  background-color: #F5FF00;
+}
+.low{
+  background-color: #FFC300;
+}
+.very-low, .deficient{
+  background-color: #FF0000;
+}
+.table-bordered{
+  border: 2px solid #000000;
+}
+
+
+.table-bordered > thead > tr > th.pdf{
+  border: 2px solid #000000;
+}
+.noborder{
+  border: 0px !important;
+}
+.noborder > td.pdf{
+  border: 0px !important;
+}
+.table > tbody > tr.noborder td.pdf{
+  border: 0px !important;
+}
+.table > tbody > tr > td.pdf{
+  padding: 5px !important;
+}
+.table > tbody > tr.black{
+  border-bottom: 2px solid black !important;
+}
+.table > tbody > tr > td.pdf{
+  border-right: 2px solid black
+}
+.table > tbody > tr > td.pdf:first-child{
+ text-align: left;
+}
+.table2{
+  background-color: #88C17D;
+  padding: 0px;
+  margin: 0px;
+}
+.table2 > tbody > tr > td:first-child{
+ text-align: right;
+}
+.minerals{
+  text-align: center !important;
+  font-weight: bold;
+  border-right: 2px solid black !important;
+  border-left: 2px solid black !important;
+}
+.empty > td.pdf{
+  background-color: white;
+  border: 0px;
+}
+
+.center-text{
+  text-align: center;
+}
+
+
+.pdf_pagebreak {
+    page-break-inside: avoid;
+}
+
+.pdf_pagebreak table, tr, td, th, tbody, thead, tfoot {
+    page-break-inside: avoid !important;
+}
+
+.pdf_pagebreak_after{
+  page-break-after:always !important;
+}
+.pdf{
+  font-size: 12px !important;
+}
+.check_ready_only{
+  pointer-events: none;
+}
+
+.span_dark input{
+  color: grey;
+}
+.span_dark span{
+  color: darkslategrey;
+  font-weight: 600;
+}
+.btn-margin{
+  margin-right: 5px;
+}
+.pdf{
+  font-size: 12px !important;
+}
+.number_error{
+  border: red 1px solid;
+}
+.summary_page .table-bordered{
+  border: 1px solid #eee !important;
+}
+.fertilzer_header{
+  background: #eee !important;
+}
+.customer_field_size{
+  margin-right: 25px;
+  margin-bottom: 10px;
+  width: 169px;
+
+}
+.indicator_rating_1{
+  background-color: #ff1c00 !important;
+  text-align: center;
+}
+
+.indicator_rating_2{
+  background-color: #ff8d00 !important;
+  text-align: center;
+}
+
+.indicator_rating_3{
+  background-color: #fffe00 !important;
+  text-align: center;
+}
+
+.indicator_rating_4{
+  background-color: #8ebc00 !important;
+  text-align: center;
+}
+
+.indicator_rating_5{
+  background-color: #0e7000 !important;
+  text-align: center;
+}
+.indicator_main_class{
+  padding: 0px !important;
+  margin-left: 15px !important;
+  border: 2px solid #000000 !important;
+}
+.no_border_right{
+  border-right: 0px !important;
+}

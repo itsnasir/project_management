@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_id: 1
+  billing_method: 1
+  hourly_rate: 9.99
+  flat_rate: 9.99
+
+two:
+  project_id: 1
+  billing_method: 1
+  hourly_rate: 9.99
+  flat_rate: 9.99
