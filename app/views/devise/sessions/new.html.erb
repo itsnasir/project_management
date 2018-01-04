@@ -1,6 +1,6 @@
 <div class="login-content">
   
-  <h1>Project Management Login</h1>
+  <h1>Sign in with your account</h1>
   <%= form_for(resource,:html => {:class => "login-form"}, as: resource_name, url: session_path(resource_name)) do |f| %>
  
       <div class="alert alert-danger display-hide">
@@ -32,9 +32,14 @@
               <!-- <div class="forgot-password">
                   <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
               </div> -->
-              <button class="btn blue" type="submit">Sign In</button>
-              <a href="/users/sign_up" id="back-btn" class="btn blue" onclick="">Sign Up</a>
+              <button class="btn blue" type="submit">Sign In</button>              
           </div>
+      </div>
+
+      <div class="row">        
+        <p class="pt-lg">Don't have an account?
+          <%= link_to "Register Now", new_user_registration_path %> 
+        </p>        
       </div>
  
   <% end %>
